@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+.links:hover {
+  color: rgb(233, 230, 41);
+}
+
+.hero-block{
+  height: 400px;
+  width: 600px;
+  margin-top: 6rem;
+  margin-left: 7rem;
+}
+
+.title{
+  font-size: 7rem;
+  color: white;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
