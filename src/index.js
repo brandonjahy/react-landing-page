@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import './css/reset.css';
 import Nav from'./components/Nav';
-import Header from './components/Header'
+import Header from './components/Header';
+import About from './components/About';
 
 const App = () => {
   
@@ -25,6 +26,11 @@ const App = () => {
             <h1 className='title'>Follow the Road To the Unknown</h1>
           </div>
         </Header>
+        <section className='part2'>
+          <About>
+            
+          </About>
+        </section>
       </>
     )
   }
