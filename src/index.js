@@ -9,6 +9,34 @@ import Header from './components/Header';
 import About from './components/About';
 import Card from './components/Card';
 
+let data = [
+{
+  title: "Explore",
+  info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+  imgURL: 'https://images.pexels.com/photos/841286/pexels-photo-841286.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=350'
+},
+{
+  title: "Seek More",
+  info: "In this life you have the rare chance to SEEK more than what the past generations have, DO THAT!",
+  imgURL: 'https://images.pexels.com/photos/314703/pexels-photo-314703.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=350'
+},
+{
+  title: "Go Beyond",
+  info: "We all hold the special abilty to go beyond what you have done yesterday dont let that chance get past you!",
+  imgURL: 'https://images.pexels.com/photos/42148/pexels-photo-42148.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=350'
+}]
+
+const printCards = () => {
+  // let items = [];
+  // for (let index = 0; index < data.length; index++) {
+  //   items.push(<Card userData={data[index]} />)
+  // }
+  // return items;
+  return data.map((item) => {
+    return (<Card userData={item} />)
+  })
+}
+
 const App = () => {
   
     return (
@@ -31,21 +59,7 @@ const App = () => {
         <section className='part2'>
           <About>
             <div className='card-block'>
-              <Card>
-                <h3 className="card-title">Explore</h3>
-                <hr className="card-div" />
-                <p className='card-info'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-              </Card>
-              <Card>
-                <h3 className="card-title">Explore</h3>
-                <hr className="card-div" />
-                <p className='card-info'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-              </Card>
-              <Card>
-                <h3 className="card-title">Explore</h3>
-                <hr className="card-div" />
-                <p className='card-info'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-              </Card>
+              {printCards()}
             </div>
           </About>
         </section>
