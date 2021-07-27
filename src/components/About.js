@@ -10,7 +10,7 @@ export default function(props){
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'Center',
-            background: 'rgb(0,0,0)',
+            background: 'url("https://images.pexels.com/photos/3733269/pexels-photo-3733269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" center/cover no-repeat)',
             color: 'white',
         }}>
             {props.children}

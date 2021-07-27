@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/heading-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {} from 'react';
 import ReactDOM from 'react-dom';
@@ -6,6 +7,7 @@ import './css/reset.css';
 import Nav from'./components/Nav';
 import Header from './components/Header';
 import About from './components/About';
+import Card from './components/Card';
 
 const App = () => {
   
@@ -28,7 +30,23 @@ const App = () => {
         </Header>
         <section className='part2'>
           <About>
-            
+            <div className='card-block'>
+              <Card>
+                <h3 className="card-title">Explore</h3>
+                <hr className="card-div" />
+                <p className='card-info'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </Card>
+              <Card>
+                <h3 className="card-title">Explore</h3>
+                <hr className="card-div" />
+                <p className='card-info'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </Card>
+              <Card>
+                <h3 className="card-title">Explore</h3>
+                <hr className="card-div" />
+                <p className='card-info'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </Card>
+            </div>
           </About>
         </section>
       </>
