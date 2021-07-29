@@ -8,8 +8,7 @@ export default function(props){
             fontSize: '1.5rem',
             height: '500px',
             width: '350px',
-            border: '2px red solid',
-            // background: props.userData.imgURL,
+            borderRadius: '20px',
             color: 'white',
             position: 'relative'
         }}>

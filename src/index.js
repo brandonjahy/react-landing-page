@@ -8,6 +8,7 @@ import Nav from'./components/Nav';
 import Header from './components/Header';
 import About from './components/About';
 import Card from './components/Card';
+import Space from './components/Space';
 
 let data = [
 {
@@ -32,8 +33,8 @@ const printCards = () => {
   //   items.push(<Card userData={data[index]} />)
   // }
   // return items;
-  return data.map((item) => {
-    return (<Card userData={item} />)
+  return data.map((item, index) => {
+    return (<Card userData={item} key={index} />)
   })
 }
 
@@ -62,6 +63,9 @@ const App = () => {
               {printCards()}
             </div>
           </About>
+        </section>
+        <section className='part3'>
+          <Space />
         </section>
       </>
     )
