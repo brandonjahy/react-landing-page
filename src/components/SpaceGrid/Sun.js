@@ -7,12 +7,12 @@ export default function(props){
             fontSize: '1.5rem',
             height: '100vh',
             width: '100%',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'Center',
-            background: 'url("https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" center/cover no-repeat)',
             color: 'white',
         }}>
+            <h1 className='space-title'>
+                where will you go in space?
+            </h1>
+            
             {props.children}
         </div>
     )

@@ -8,7 +8,8 @@ import Nav from'./components/Nav';
 import Header from './components/Header';
 import About from './components/About';
 import Card from './components/Card';
-import Space from './components/Space';
+import Space from './components/SpaceGrid/Space';
+
 
 let data = [
 {
@@ -27,6 +28,27 @@ let data = [
   imgURL: 'https://images.pexels.com/photos/42148/pexels-photo-42148.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=350'
 }]
 
+let Data = [
+  {
+    title: 'Sun',
+    imgURL: 'https://energyeducation.ca/wiki/images/thumb/b/bd/9103296900_0d383feabf_z.jpg/360px-9103296900_0d383feabf_z.jpg',
+    info: 'a very hot place',
+    miles: 'very damn far!'
+  },
+  {
+    title: 'Sun',
+    planetImg: 'https://energyeducation.ca/wiki/images/thumb/b/bd/9103296900_0d383feabf_z.jpg/360px-9103296900_0d383feabf_z.jpg',
+    info: 'a very hot place',
+    miles: 'very damn far!'
+  },
+  {
+    title: 'Sun',
+    planetImg: 'https://energyeducation.ca/wiki/images/thumb/b/bd/9103296900_0d383feabf_z.jpg/360px-9103296900_0d383feabf_z.jpg',
+    info: 'a very hot place',
+    miles: 'very damn far!'
+  }
+]
+
 const printCards = () => {
   // let items = [];
   // for (let index = 0; index < data.length; index++) {
@@ -41,35 +63,29 @@ const printCards = () => {
 const App = () => {
   
     return (
-      <>
-        {/* <Nav>
-          <a herf='#' className='links' >About</a>
-          <a herf='#' className='links'>Home</a>
-          <a herf='#' className='links'>Contact</a>
-        </Nav> */}
-        <Header>
-          <Nav>
-            <a herf='#' className='links' >About</a>
-            <a herf='#' className='links'>Home</a>
-            <a herf='#' className='links'>Contact</a>
-          </Nav>
-          <div className="hero-block">
-            <h1 className='title'>Follow the Road To the Unknown</h1>
-          </div>
-        </Header>
-        <section className='part2'>
-          <About>
-            <div className='card-block'>
-              {printCards()}
-            </div>
-          </About>
-        </section>
-        <section className='part3'>
-          <Space />
-        </section>
-      </>
-    )
-  }
-
+            <>
+                <Header>
+                <Nav>
+                  <a herf='#' className='links' >About</a>
+                  <a herf='#' className='links'>Home</a>
+                  <a herf='#' className='links'>Contact</a>
+                </Nav>
+                <div className="hero-block">
+                  <h1 className='title'>Follow the Road To the Unknown</h1>
+                </div>
+              </Header>
+              <section className='part2'>
+                <About>
+                  <div className='card-block'>
+                    {printCards()}
+                  </div>
+                </About>
+              </section>
+              <section className='part3'>
+                <Space />
+              </section>
+            </>
+            )
+          }
 
 ReactDOM.render(<App />, document.getElementById('root'))
